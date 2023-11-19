@@ -1,0 +1,46 @@
+HTML uses:
+<p>
+<a>
+<hr>
+<h1>
+<h2>
+<h3>
+<h4>
+<em>
+<li>
+<ul>
+<div>
+<nav>
+<span>
+<meta>
+<script>
+<strong>
+<button>
+
+CSS uses:
+a
+em
+body
+strong
+navbar
+a:hover
+nav-link
+btn-hover
+btn-primary
+navbar-brand
+nav-link:hover
+nav-link.active
+navbar-brand:hover
+h1, h2, h3, h4, h5, h6
+
+CSS types:
+color:
+background:
+font-weight:
+font-family:
+border-color:
+background-color:
+
+I used bootstrap for the navbar at the top of the page
+I used javascript for confetti and the rainbow linkedin text
+(I may have missed some of the HTML or CSS components I used)

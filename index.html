@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <!-- Prereqs -->
+        <link rel="icon" type="image/png" href="images/site-logo-big.png" id="icon">
+        <script src="setfavicon.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.0/dist/confetti.browser.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                console.log("confetti");
+                confetti({
+                    particleCount: 1000,
+                    spread: 180,
+                    origin: {
+                        y: 1
+                    }
+                });
+            });
+        </script>
+        <link href="styles.css" rel="stylesheet">
+        <!-- Tab Title -->
+        <title>Isaiah Murray</title>
+    </head>
+
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="index.html"><img class="icon-image" src="images/site-logo-light.png"></a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <!-- Dropdown Menu for Projects -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Portfolio
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="physical-projects.html">Physical</a></li>
+                                <li><a class="dropdown-item" href="digital-projects.html">Digital</a></li>
+                                <li><a class="dropdown-item" href="experiential-projects.html">Experiential</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Tab Body -->
+        <div class="container mt-5">
+            <hr>
+            <!-- Intro -->
+            <h3> Isaiah Murray </h3>
+            <h4> Student at Nuvu Innovation School</h4>
+            <h2>Sup Cuh! My name is Isaiah Murray, I am an aspiring engineer with a love for learning and trying new things!</h2>
+            <hr>
+            <h1>Personal</h1>
+            <p>I enjoy creating software, generative AI, 3D modeling and visualizations, making things in our workshop and maker space (3D printer, laser cutter, and more), Dungeons and Dragons, math, and anything STEM. I am proficient in C#, Javascript, LaTeX, and Python. My experience includes HTML, C, C++, Java, and TensorFlow. Studied classical guitar from the age of 4 to 14. I love playing squash and rowing. </p>
+            <hr>
+            <!-- Experience Section Grid -->
+            <h1>Experience</h1>
+            <div class="container">
+                <div class="row mt-3">
+                    <div class="col">
+                        <strong>MIT CHEM-E: STRANO RESEARCH GROUP</strong>
+                        <p><em>Laboratory Assistant</em></p>
+                        <p>Admitted to the MIT HIP-SAT program where I worked in Professor Michael Strano's lab to refine the power output of thermal resonators. Tested and developed phase change materials (PCMs). Created and delivered the final presentation at the HIP-SAT Symposium, and presented a poster at the Boston Mammalian Synthetic Biology Symposium. </p>
+                        <em>2023 - 2023</em>
+                    </div>
+                    <div class="col">
+                        <strong>MATHNASIUM</strong>
+                        <p><em>Mathematics Tutor</em></p>
+                        <p>Applied for and received job as a math tutor at Mathnasium in Cohasset at the age of 14, have tutored there since. Working with children from the 3rd grade to the 8th grade. Working with owner to build life skills beyond tutoring.</p>
+                        <em>2022 - present</em>
+                    </div>
+                    <div class="col">
+                        <strong>CHERISH HEALTH</strong>
+                        <p><em>Machine Learning Intern</em></p>
+                        <p>Applied for and received internship at Cherish Health for the summer of 2022. Supported CEO and CTO with user demos in support of their successful Series A investment round. Supported engineering team with machine learning data collection and network training. Developed skills in product demos, CAD, Python, and TensorFlow.</p>
+                        <em>2022 - 2022</em>
+                    </div>
+                    <div class="col">
+                        <strong>CSCR</strong>
+                        <p><em>Student researcher and volunteer - shellfish survey, water quality, drifter teams</em></p>
+                        <p>Applied & received Marjot grant to study Zostera marina. Analyzed recovery conditions for Labyrinthula zosterae infected specimens by constructing and testing an automated artificial environment.</p>
+                        <em>2016 - 2022</em>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <strong>SCRIBBLE WORLDS ACTIVITY BOOK</strong>
+                        <p><em>Inventor and Co-founder</em></p>
+                        <p>Invented Scribble Worlds (www.scribbleworlds.com) with father, combining love of Dungeons and Dragons, Rogue-like adventure games, and video games with love of creating physical objects.  Created a process for laser cutting complex paper shapes to support industrial (well, cottage-industry) production.  Helped create final game and marketing content.  Worked with parents to submit patent and trademark for the business.</p>
+                        <em>2016 - present</em>
+                    </div>
+                    <div class="col">
+                        <strong>MEOWGIC CARDS LLC</strong>
+                        <p><em>Co-founder, Artist, Tester</em></p>
+                        <p>Supported creating Meowgic Cards LLC (www.meowgiccards.com), a parody trading card game with four card decks created.  Helped create and review business plan, website content, some artistic content, and test game.</p>
+                        <em>2020 - present</em>
+                    </div>
+                    <div class="col">
+                        <strong>FRENCH MEMORIES BAKERY</strong>
+                        <p><em>Counter Work, Food Service, Kitchen Support</em></p>
+                        <p>Worked cash register, filled customer orders, made and served meals, provided general kitchen support.</p>
+                        <em>2022 - 2022</em>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Education Section Grid -->
+            <h1>Education</h1>
+            <div class="row container mt-3">
+                <div class="col">
+                    <h4><strong>NUVU INNOVATION SCHOOL (8th - 12th Grades)</strong></h4>
+                    <p>Project based learning studios and seminars. John’s Hopkins CTY courses in Bio, Chem, AP Chem, and Essay  Writing. Math courses through Art of Problem solving include Intermediate Algebra, Precalculus, AP Calculus. Currently taking multivariable and CS-50 through harvard extension.</p>
+                    <em>2020 – 2024</em>
+                </div>
+                <div class="col">
+                    <h4><strong>COHASSET MIDDLE SCHOOL (7th Grade) </strong></h4>
+                    <p>Moved to Cohasset, built strong friendships, earned straight A’s including in extracurricular AoPS Geometry and Intermediate Algebra courses. Tested into Johns Hopkins Center for Talented Youth via their SSAT equivalent.</p>
+                    <em>2019 – 2020</em>
+                </div>
+                <div class="col">
+                    <h4><strong>HOME SCHOOL (K-6th Grades)</strong></h4>
+                    <p>My homeschooling experience focused on a solid core of studies around the 3-R’s - reading, ‘riting, and ‘rithmatic, as well as plenty of free time to focus on my passion around STEM - programming, making, electronics, and more.  </p>
+                    <em>2010 – 2019</em>
+                </div>
+            </div>
+            <hr>
+            <!-- Community Section -->
+            <h1>Community</h1>
+            <p>Member of Cohasset Middle School and High School Robotics teams, Cohasset Maritime Institute Rowing, Cohasset Sailing Club, CSCR, Hingham Sailing Club, Volunteering activities through the Cohasset UU Youth Program.</p>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <a href="https://www.linkedin.com/in/isa-murray/" target="_blank">
+                <img class="icon-image" src="/images/174857.png" alt="LinkedIn Icon">
+            </a>
+            <a href="https://www.instagram.com/isa19837/" target="_blank">
+                <img class="icon-image" src="/images/Instagram_icon.png" alt="Instagram Icon">
+            </a>
+            <a href="mailto:isaiah.j.murray@gmail.com" target="_blank">
+                <img class="icon-image" src="/images/gmail.png" alt="Gmail Icon">
+            </a>
+        </footer>
+    </body>
+
+</html>

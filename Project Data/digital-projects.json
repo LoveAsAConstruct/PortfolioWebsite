@@ -1,0 +1,62 @@
+[
+    {
+        "imgSrc": "images/Projects/site splash.png",
+        "title": "Portfolio Website",
+        "date": "2023"
+    },
+    {
+        "imgSrc": "../images/Localized/JSONImages/zkwveq5ac9bnsrl71jkm0yt942eg",
+        "title": "Generative Fiction",
+        "date": "2023"
+    },
+    {
+        "imgSrc": "../images/Localized/JSONImages/eq3ugkoyvnwqauu33sg6z147lkl8",
+        "title": "Parallel Processing",
+        "date": "2022"
+    },
+    {
+        "imgSrc": "../images/Localized/JSONImages/9zyq0otjjjb4zchbwddlzozn2fcb",
+        "title": "Sustainable Survival",
+        "date": "2022"
+    },
+    {
+        "imgSrc": "../images/Localized/JSONImages/kyvfof5hag0zrrocji7p26xjw1bk",
+        "title": "NewVu",
+        "date": "2022"
+    },
+    {
+        "imgSrc": "../images/Localized/JSONImages/wor1yubny59y3b05ai87and7fdr5",
+        "title": "Phobia Fighter",
+        "date": "2022"
+    },
+    {
+        "imgSrc": "../images/Localized/JSONImages/935um38lmqteshstcoem0qah6nbs",
+        "title": "Biomass Degredation",
+        "date": "2022"
+    },
+    {
+        "imgSrc": "../images/Localized/JSONImages/3ywgnhray8imhcelbqg2fvw6tzst",
+        "title": "PROActive",
+        "date": "2021"
+    },
+    {
+        "imgSrc": "../images/Localized/JSONImages/lrorn6ffcmrzw7hmbqo9nypzvfkq",
+        "title": "The Ascent",
+        "date": "2021"
+    },
+    {
+        "imgSrc": "../images/Localized/JSONImages/7nh8dlb8fyx7w25lp0tfo76pghgd",
+        "title": "Max Altitude",
+        "date": "2021"
+    },
+    {
+        "imgSrc": "../images/Localized/JSONImages/sgxnxsyhhizwx3d0pkhr4klk7zu7",
+        "title": "Subterrain Strategy",
+        "date": "2020"
+    },
+    {
+        "imgSrc": "../images/Localized/JSONImages/2o6ixla1xuauio9q67bvyyzt7ghm",
+        "title": "Graffiti AR",
+        "date": "2020"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "imgSrc": "../images/Localized/JSONImages/happy-test-screen-825x510.jpg",
+        "title": "TEST",
+        "date": "9999"
+    },
+    {
+        "imgSrc": "/images/Projects/stove.png",
+        "title": "Kroka Collaboration",
+        "date": "2024"
+    },
+    {
+        "imgSrc": "../images/Localized/JSONImages/IMG_0054_1.JPG",
+        "title": "Code Cruiser",
+        "date": "2023"
+    },
+    {
+        "imgSrc": "../images/Localized/JSONImages/IMG_0033.JPG",
+        "title": "Pinhole Cameras",
+        "date": "2023"
+    },
+    {
+        "imgSrc": "../images/Localized/JSONImages/IMG_0090.JPG",
+        "title": "Tower of Tears",
+        "date": "2023"
+    },
+    {
+        "imgSrc": "../images/Localized/JSONImages/9fwth1634jcz4rv3l6svg8o22y6y",
+        "title": "Support Skeleton",
+        "date": "2022"
+    }
+]
