@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+{{ tags | capitalize}} projects
+{% endblock %}
+
+{% block main %}
+<header>
+    <div class="title-image-container">
+        <img src={{imagesrc}} alt="Title Image" class="title-image">
+        <div class="title-image-text">
+            <div class="centered-text">
+            {{ tags | capitalize }} Projects
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div id="projectsContainer">
+            <!-- Projects will be dynamically inserted here -->
+        </div>
+    </div>
+</main>
+<script>
+    // JavaScript code to create a parallax effect
+   const titleImageText = document.querySelector('.title-image-text');
+   const titleImageContainer = document.querySelector('.title-image-container');
+
+   window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const speed = 0.5; // Adjust the speed of the parallax effect
+
+    // Calculate the translateY value for the text
+    const translateY = scrollY * speed;
+
+    // Apply the transform to the text element
+    titleImageText.style.transform = `translateY(${translateY}px)`;
+   });
+</script>
+<script src="/static/scripts/loadprojects.js" tags="{{ tags }}"></script>
+{% endblock %}

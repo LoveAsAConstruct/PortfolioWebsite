@@ -17,11 +17,19 @@
                 link.href = faviconURL;
             }
         }
+        // Function to add a dark mode stylesheet
+        function addDarkModeStylesheet(stylesheetURL) {
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = stylesheetURL;
+            document.head.appendChild(link);
+        }
 
         // Check if dark mode is enabled
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             // Change the favicon to the inverted version for dark mode
-            changeFavicon("/static/icon/dark-favicon.png"); // Replace with your inverted favicon URL
+            changeFavicon("static/images/icon/dark-favicon.png"); // Replace with your inverted favicon URL
+            addDarkModeStylesheet("/static/darkstyles.css");
         }
     </script>
     <title>Isaiah Murray: {% block title %}{% endblock %}</title>
@@ -37,7 +45,7 @@
                     <a class="navbar-brand" href="/"><img class="icon-image" src="/static/images/icon/dark-icon.png"></a>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            <a class="nav-link {{ 'active' if request.path == '/' else '' }}" aria-current="page" href="/">Home</a>
                         </li>
                         <!-- Dropdown Menu for Projects -->
                         <li class="nav-item dropdown">
@@ -45,13 +53,14 @@
                                 Portfolio
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="physical-projects.html">Physical</a></li>
-                                <li><a class="dropdown-item" href="digital-projects.html">Digital</a></li>
-                                <li><a class="dropdown-item" href="experiential-projects.html">Experiential</a></li>
+                                <li><a class="dropdown-item" href="/projects/physical">Physical</a></li>
+                                <li><a class="dropdown-item" href="/projects/digital">Digital</a></li>
+                                <li><a class="dropdown-item" href="/projects/experiential">Experiential</a></li>
+                                <li><a class="dropdown-item" href="/projects/all">All</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link {{ 'active' if request.path == '/contact' else '' }}" href="/contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -59,10 +68,10 @@
         </nav>
     </header>
 
-    <main class="container-fluid py-5">
+    <main>
         {% block main %}{% endblock %}
     </main>
-
+    
     <footer>
         <footer>
             <a href="https://www.linkedin.com/in/isa-murray/" target="_blank">

@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Contact
+{% endblock %}
+
+{% block main %}
+<div class="container mt-5">
+
+    <!-- Contact Info, LinkedIn link, and email address-->
+    <h2>Contact Information</h2>
+    <a id="linkedintext" href="https://www.linkedin.com/in/isa-murray/" target="_blank">
+        <p><strong>Connect with me on LinkedIn</strong></p>
+    </a>
+    <a href="mailto:isaiah.j.murray@gmail.com" target="_blank">
+        <p><strong>Send me an email</strong></p>
+    </a>
+    <hr>
+
+    <!-- Contact Form (need 3rd party email sender for this)-->
+    <form hidden>
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}

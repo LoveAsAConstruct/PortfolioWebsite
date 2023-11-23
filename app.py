@@ -12,6 +12,13 @@ app = Flask(__name__)
 # Configure session to use filesystem (instead of signed cookies)
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
+type_to_imagesrc = {
+    "physical": "/static/images/physicaltitle3.png",
+    "digital": "/static/images/digitaltitle.png",
+    "experiential": "/static/images/experientialtitle.png",
+    "all": "/static/images/physicaltitle2.png"
+}
+
 Session(app)
 
 
@@ -44,4 +51,13 @@ def after_request(response):
 @app.route("/")
 def index():
     return render_template("index.html")
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
+@app.route("/projects/<project_type>")
+def projects(project_type):
+    imagesrc = type_to_imagesrc.get(project_type, "")
+    return render_template("projects.html", tags=project_type,imagesrc=imagesrc)
 

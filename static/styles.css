@@ -1,11 +1,13 @@
 :root {
-    --secondary-accent-color: #F2545B; /* Accent Color */
+    --secondary-accent-color: #d7263d; /* Accent Color */
     --accent-color: #72B01D; /* Secondary Accent Color */
     --main-color: #0D0A0B; /* Main Color */
     --text-color: #454955; /* Text Color */
     --background-color: #F3EFF5; /* Background Color */
     --light-background: #FFFFFF; /* Light Background */
 }
+
+
 
 body {
     background-color: var(--background-color);
